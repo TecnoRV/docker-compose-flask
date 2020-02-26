@@ -38,12 +38,12 @@ dockercomposeflask_web_1     /runserver.sh                    Up      0.0.0.0:80
 ## Test the web service
 
 ```sh
-$ curl 127.0.0.1
-Hello Container World! I have been seen 1 times and my hostname is 09ad15ad1b51.
-$ curl 127.0.0.1
-Hello Container World! I have been seen 2 times and my hostname is 09ad15ad1b51.
-$ curl 127.0.0.1
-Hello Container World! I have been seen 3 times and my hostname is 09ad15ad1b51.
+$ curl http://127.0.0.1
+Hello Container World! I have been seen 1 times and my hostname is 25d45dc20b24.
+$ curl http://127.0.0.1/hello
+Hello Container World, this is my first Flask Demo with Docker! I have been seen 2 times and my hostname is 25d45dc20b24.
+$ curl -XGET 'http://127.0.0.1/hello'
+Hello Container World, this is my first Flask Demo with Docker! I have been seen 3 times and my hostname is 25d45dc20b24.
 ```
 
 ### If you want, you can stop the service
