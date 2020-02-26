@@ -11,14 +11,14 @@
 ```
 
 ## Environments setup
-We nned to install docker-compose previouslly
+We need to install docker-compose previouslly
 
 ## Quick start
 
 ### First build and up
 
 ```sh
-$ git clone https://github.com/xiaopeng163/docker-compose-flask
+$ git clone https://github.com/TecnoRV/docker-compose-flask.git
 $ cd docker-compose-flask
 $ docker-compose build
 $ docker-compose up -d
