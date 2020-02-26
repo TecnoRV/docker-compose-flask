@@ -20,14 +20,14 @@ We need to install docker-compose previouslly
 ```sh
 $ git clone https://github.com/TecnoRV/docker-compose-flask.git
 $ cd docker-compose-flask
-$ docker-compose build
-$ docker-compose up -d
+$ sudo docker-compose build
+$ sudo docker-compose up -d
 ```
 
 ### Check the service running information
 
 ```sh
-$ docker-compose ps
+$ sudo docker-compose ps
            Name                         Command               State           Ports
 --------------------------------------------------------------------------------------------
 dockercomposeflask_nginx_1   /usr/sbin/nginx                  Up      0.0.0.0:80->80/tcp
@@ -49,7 +49,7 @@ Hello Container World! I have been seen 3 times and my hostname is 09ad15ad1b51.
 ### If you want, you can stop the service
 
 ```sh
-$ docker-compose stop
+$ sudo docker-compose stop
 Stopping dockercomposeflask_nginx_1 ... done
 Stopping dockercomposeflask_web_1   ... done
 Stopping dockercomposeflask_redis_1 ... done
