@@ -28,3 +28,8 @@ redis = Redis(host=os.environ.get('REDIS_HOST', 'redis'), port=6379)
 def hello():
     redis.incr('hits')
     return 'Hello Container World! I have been seen %s times and my hostname is %s.\n' % (redis.get('hits'),socket.gethostname())
+
+@app.route('/hello', methods=['GET'])
+def hello():
+    redis.incr('hits')
+    return 'Hello Container World, this is my first Flask Demo with Docker! I have been seen %s times and my hostname is %s.\n' % (redis.get('hits'),socket.gethostname())
